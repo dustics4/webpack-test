@@ -1,12 +1,12 @@
+import myName from './myName';
 import _ from 'lodash';
 
 function component() {
     const element = document.createElement('div');
   
-    // Lodash now imported by the script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
+    element.textContent = myName("Cody") ; 
     return element;
   }
   
   document.body.appendChild(component());
+
